@@ -1,0 +1,649 @@
+@font-face {
+  font-family: earthtracks;
+  src: url(../public/Asserts/fonts/ChinChan.ttf);
+}
+
+@font-face {
+  font-family: Nipok;
+  src: url(../public/Asserts/fonts/ChinChan.ttf);
+}
+
+@font-face {
+  font-family: WendyOne;
+  src: url(../public/Asserts/fonts/ChinChan.ttf);
+  
+}
+
+
+html, body {
+	background: linear-gradient(-45deg, #6ed5fe, #d3dce0, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-weight: bold;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.navbar {
+  background: linear-gradient(#6ed5fe, #68d3fd);
+  justify-content: center;
+}
+
+.navbar .navbar-brand {
+  color: #0a7bac !important;
+  font-family: Nipok;
+  font-size: 45px;
+  padding-left: 5 0px;
+  pointer-events: none; 
+  margin-top: 10px;
+}
+
+.navbar img {
+  margin-right: 20px;
+}
+
+.navbar .nav-link {
+  font-family: earthtracks;
+  color: #111111 !important;
+  font-size: 28px;
+  border-radius: 15px;
+}
+
+.navbar .nav-link:hover {
+  background-color: #f7f5f2;
+  transition: .1s ease;
+  transform: scale(1.1);
+}
+
+.navbar img {
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.navbar .nav-item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navbar img {
+  height: 14vh;
+}
+
+
+
+/* ---------  media query's  --------- */
+
+
+@media (max-width: 1105px) {
+  .navbar .nav-item {
+    background: linear-gradient(#6ed5fe, #68d3fd);
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 542px) {
+  .navbar {
+    background: linear-gradient(#6ed5fe, #68d3fd);
+    height: 190px;
+    margin-top: -30px;
+  }
+  .navbar img {
+    height: 10vh;
+  }
+  .navbar .navbar-brand {
+   margin-top: -20px;
+  } 
+}
+
+@media (max-width: 400px) {
+   .navbar {
+    margin-top: -40px;
+   }
+   
+  .navbar-brand {
+    margin-right: 50px;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 30px;
+  }
+
+  .navbar .ahlogo {
+    margin-left: -20px;
+  }
+
+  .navbar img {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+
+/* ----------------------- herosection ----------------------- */
+
+
+.hero-section video {
+  width: 100%;
+  max-height: 100%;
+  background-image: url(../public/Asserts/ShinHerosectionDance.gif);
+  background-size: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.hero-section #player-overlay-mobile {
+  display: none;
+}
+
+.hero-section h1 {
+  position: absolute;
+  top: 8%;
+  font-family: Nipok;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+  color: #0a7bac;
+  font-size: 60px;
+  z-index: 100;
+}
+.hero-section h3 {
+  position: absolute;
+  top: 13%;
+  font-family: WendyOne;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+  color: #F5F6FB;
+  font-size: 28px;
+  padding-top: 20px;
+  z-index: 100;
+}
+
+.hero-section a {
+  background: transparent;
+  color: #111111;
+  display: inline-block;
+  margin: 10px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  padding: 2px 20px 2px 20px;
+  text-align: center;
+  font-family: WendyOne;
+  z-index: 1000 !important;
+  font-size: 24px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-section a:hover{
+  background-color: #f7f5f2;
+  transition: .1s ease;
+  transform: scale(1.1);
+}
+
+
+/* ---------  media query's  --------- */
+
+
+@media (max-width: 1090px) {
+   .hero-section div.text-center a {
+     font-size: 20px;
+     margin-bottom: -30px;
+  }
+  .hero-section a {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-section div.text-center a {
+    font-size: 15px;
+  }
+  .hero-section a {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .hero-section video {
+    margin-bottom: 20px;
+  }
+
+  .hero-section a {
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero-section video {
+    margin-top: -50px;
+    background-size: 100%;
+  }
+
+  .hero-section div.text-center {
+    margin-top: -10px;
+    padding: 0px;
+  }
+
+  .hero-section div.text-center a {
+    font-size: 12px;
+  }
+}
+
+
+/* --------------- About ----------------- */
+
+
+#about {
+ padding-top: 40px;
+ padding-bottom: 120px;
+ text-align: center;
+}
+
+.about {
+  max-width: 100%;
+  margin: 0px auto;
+  margin-top: -20px;
+}
+
+.about .ChanPicture {
+  height: 80%;
+  width: 100%;
+  margin-top: 105px;
+  border-radius: 10px;
+}
+
+.about h1 {
+  font-family: Nipok;
+  margin-top: 65px;
+  text-align: center;
+  color: #111111;
+  font-size: 37px;
+  font-weight: bold;
+}
+
+.about p {
+  font-family: earthtracks;
+  padding-left: 70px;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  font-size: 17px;
+  padding-top: 28px;
+  line-height: 35px;
+  font-weight: bold;
+  color: #0e0d0d;
+}
+
+
+@media (max-width: 800px) {
+  #about {
+    margin-top: 20px;
+    margin-bottom: -60px;
+  }
+  .about h1 {
+    padding-left: 0px;
+    font-size: 31px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  .about p {
+    padding: 20px;
+    line-height: 31px;
+    letter-spacing: 2px;
+    font-size: 18px;
+  }
+  .about .ChanPicture {
+    height: 50%;
+    width: 120%;
+    margin-top: 295px;
+    border-radius: 10px;
+    margin-left: -50px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .about h1 {
+    padding-left: 0px;
+    font-size: 29px;
+  }
+  .about p {
+    padding: 20px;
+    line-height: 31px;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  #about {
+    margin-top: 10px;
+    margin-bottom: -100px;
+  }
+  .about h1 {
+    margin-bottom: 20px;
+  }
+}
+
+/* ----------------- Tokenomics ---------------------  */
+
+
+.buy-sell .toke {
+  color: #111111;
+  margin-top: -40px;
+  font-weight: bold;
+  font-size: 37px;
+}
+
+.buy-sell h1 {
+  color: #111111;
+  font-family: Nipok;
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding-top: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.buy-sell .col-4 {
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.buy-sell .table {
+  text-align: center;
+  background-color: #f3f1ed;
+  padding: 10px 20px;
+  border-radius: 10px;
+  height: 90px;
+}
+
+.buy-sell .table h4 {
+  font-family: Nipok;
+  margin-top: 4px;
+  font-size: 26px;
+  margin-bottom: 0px;
+  color: #111111;
+  font-weight: bold;
+}
+
+.buy-sell .table h5 {
+  font-family: earthtracks;
+  color: #111111;
+  font-weight: bold;
+}
+
+.buy-sell .table-bottom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  justify-content: center;
+}
+
+@media (max-width: 1050px) {
+  .buy-sell .table h5 {
+    font-size: 16px;
+  }
+  .buy-sell .table-bottom .border-bot {
+    margin: 0 auto;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 950px) {
+  .buy-sell .table-sell {
+    text-align: center;
+  }
+  .buy-sell .table-buy {
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .buy-sell .table-bottom h6 {
+    color: #e200e2;
+    font-family: Nipok;
+    font-size: 25px;
+    justify-content: center;
+  }
+  .buy-sell .table-bottom h5 {
+    color: #00A0E2;
+    font-family: earthtracks;
+    font-size: 25px;
+    justify-content: center;
+  }
+  .buy-sell .table-sell {
+    text-align: center;
+  }
+  .buy-sell .table-buy {
+    text-align: center;
+  }
+  .buy-sell .table-sell img {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 800px) {
+  .buy-sell {
+    padding: 20px 20px;
+  }
+  .buy-sell img {
+    width: 125%;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .buy-sell .toke {
+    font-size: 31px;
+  }
+  .buy-sell h1 {
+    font-size: 28px;
+  }
+  .buy-sell .table {
+    padding: 10px 10px;
+  }
+  .buy-sell .table h6 {
+    font-size: 23px;
+    padding-top: 22px;
+  }
+  .buy-sell .table h4 {
+    font-size: 26px;
+    padding-top: 4px;
+  }
+  .buy-sell .table h5 {
+    font-size: 18px;
+  }
+  .buy-sell .table-buy img {
+    margin-top: 98px;
+    height: 250px;
+  }
+  .buy-sell .table-sell img {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .buy-sell .toke {
+    font-size: 31px;
+    margin-bottom: 50px;
+  }
+  .buy-sell h1 {
+    margin-top: -50px;
+  }
+}
+
+@media (max-width: 600px) {
+.buy-sell .toke {
+  font-size: 29px;
+}
+.buy-sell h1 {
+  font-size: 25px;
+}
+.buy-sell .table h4 {
+  font-size: 24px;
+}
+}
+
+@media (max-width: 500px) {
+  .buy-sell .table-bottom h6 {
+    color: #00A0E2;
+    font-family: Nipok;
+    font-size: 35px;
+    margin-top: -30px;
+  }
+  .buy-sell .table-bottom h5 {
+    margin-top: -30px;
+  }
+  .buy-sell .table h4 {
+    font-size: 21px;  
+  }
+  .buy-sell .table h5 {
+    font-size: 15px;  
+  }
+  .buy-sell h1 {
+    font-size: 22px;  
+  }
+}
+
+@media (max-width: 290px) {
+  .buy-sell .table h6 {
+    font-size: 17px;
+  }
+  .buy-sell .table h5 {
+    font-size: 12px;
+  }
+  .buy-sell .table h4 {
+    font-size: 25px;
+  }
+}
+
+
+/* ------------------------- Roadmap ------------------------- */
+
+
+.roadmap h1 {
+  text-align: center;
+  color: #111111;
+  font-family: Nipok;
+  padding-bottom: 30px;
+  font-size: 37px;
+  font-weight: bold;
+  margin-top: 150px;
+
+}
+.roadmap h2 {
+  font-family: Nipok;
+  font-size: 28px;
+  padding: 10px;
+  font-weight: bold;
+  color: #111111;
+}
+.roadmap ul {
+  padding: 0px;
+  margin-top: 10px;
+  margin: 20px;
+  background-color: #f3f1ed;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.roadmap ul li {
+  font-family: earthtracks;
+  list-style-type: none;
+  font-size: 22px;
+  line-height: 60px;
+  opacity: 0.9; 
+  color: #111111;
+  font-weight: bold;
+}
+
+/* ---------  media query's  --------- */
+
+@media (max-width: 1000px) {
+    .roadmap ul li {
+      font-size: 20px;
+    }
+  }
+
+@media (max-width: 800px) {
+  .roadmap h1 {
+    padding-bottom: 0px;
+    font-size: 31px;
+    margin-top: 70px;
+  }
+  .roadmap h2 {
+    margin-top: 30px;
+    font-size: 23px;
+}
+  .roadmap ul li {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 600px) {
+  .roadmap h1 {
+    font-size: 29px;
+  }
+}
+
+
+/* -------------- Footer --------------------  */
+
+.footer p {
+  font-family: earthtracks;
+  padding-top: 70px;
+  color: #111111;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer h6 {
+  color: #111111;
+  font-family: Nipok;
+  text-align: center;
+  padding-top: 9px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* ---------  media query's  --------- */
+
+@media (max-width: 800px) {
+  .footer p {
+    font-size: 13px;
+  }
+  .footer h6 {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.467d2757.css",
+    "main.js": "/static/js/main.d2baa598.js",
+    "static/media/ShinHerosectionDance.gif": "/static/media/ShinHerosectionDance.14bd6585dc190acffc99.gif",
+    "static/media/ChinChan.ttf": "/static/media/ChinChan.dbcc53ba2f7e6fa910ad.ttf",
+    "index.html": "/index.html",
+    "main.467d2757.css.map": "/static/css/main.467d2757.css.map",
+    "main.d2baa598.js.map": "/static/js/main.d2baa598.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.467d2757.css",
+    "static/js/main.d2baa598.js"
+  ]
+}
